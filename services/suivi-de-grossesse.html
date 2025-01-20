@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suivi de Grossesse - Cabinet de Sage-Femme</title>
     <link rel="stylesheet" href="../styles.css"> <!-- Relie le CSS principal -->
+    <style>
+        /* Styles spécifiques à la page fille */
+        .page-header {
+            background-color: var(--couleur-principale);
+            color: var(--fond-clair);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .service-content {
+            margin: 20px 0;
+            background-color: var(--fond-gris);
+            border-radius: 8px;
+            color: var(--fond-clair);
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        .service-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,9 +42,11 @@
         <a href="../#rendez-vous">Prendre rendez-vous</a>
         <a href="../#contact">Contact</a>
     </nav>
-    <section>
+    <section class="page-header">
         <h2>Suivi de Grossesse</h2>
-        <img src="../images/A_warm_and_realistic_illustration_of_a_pregnancy_c.png" alt="Suivi de grossesse" style="max-width: 100%; border-radius: 8px;">
+    </section>
+    <section class="service-content">
+        <img src="../images/A_warm_and_realistic_illustration_of_a_pregnancy_c.png" alt="Suivi de grossesse">
         <p>
             Un accompagnement personnalisé pour répondre à vos questions et assurer votre bien-être tout au long de votre grossesse.
         </p>
