@@ -165,11 +165,45 @@
     </section>
 
     <section id="rendez-vous">
-        <h2>Prendre rendez-vous</h2>
-        <p>Pour prendre rendez-vous, cliquez sur le bouton ci-dessous. Vous serez redirigé(e) vers notre plateforme de réservation sécurisée.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Calendar_icon.png" alt="Icône calendrier">
-        <a href="https://www.rdvsagefemme.com/a/perrine-willigens" target="_blank" class="button-link">Accéder à la prise de rendez-vous</a>
-    </section>
+    <h2>Prendre rendez-vous</h2>
+    <p>Pour prendre rendez-vous, cliquez sur le bouton ci-dessous. Vous serez redirigé(e) vers notre plateforme de réservation sécurisée.</p>
+    <div class="bouton-container">
+        <a href="https://www.rdvsagefemme.com/a/perrine-willigens" target="_blank" rel="noopener noreferrer" class="button-link">
+            Prendre rendez-vous
+        </a>
+    </div>
+</section>
+
+<style>
+    .bouton-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .button-link {
+        display: inline-block;
+        background-color: var(--couleur-accent);
+        color: var(--fond-clair);
+        padding: 15px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .button-link:hover {
+        background-color: var(--couleur-principale);
+        transform: scale(1.05);
+    }
+
+    .button-link:active {
+        background-color: var(--couleur-secondaire);
+        transform: scale(0.98);
+    }
+</style>
+
 
     <section id="contact">
         <h2>Contact</h2>
