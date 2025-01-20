@@ -17,20 +17,6 @@
             --fond-gris: #A68A79;          /* Marron gris */
         }
 
-        <style>
-    /* Suppression du style bleu par défaut pour les hyperliens */
-    a {
-        color: inherit; /* Adopte la couleur du texte environnant */
-        text-decoration: none; /* Supprime le soulignement */
-    }
-
-    /* Ajout d'un effet visuel au survol pour garder l'interactivité */
-    a:hover {
-        color: var(--couleur-accent); /* Change la couleur au survol */
-        text-decoration: underline; /* Ajoute un soulignement au survol */
-    }
-        </style>
-
         /* Styles généraux */
         body {
             font-family: 'Oswald', Arial, sans-serif;
@@ -112,6 +98,46 @@
             border: none;
         }
 
+        /* Suppression du style bleu par défaut pour les hyperliens */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--couleur-accent);
+            text-decoration: underline;
+        }
+
+        /* Style spécifique pour le bouton "Prendre rendez-vous" */
+        .bouton-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: var(--couleur-accent);
+            color: var(--fond-clair);
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button-link:hover {
+            background-color: var(--couleur-principale);
+            transform: scale(1.05);
+        }
+
+        .button-link:active {
+            background-color: var(--couleur-secondaire);
+            transform: scale(0.98);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             body {
@@ -147,83 +173,29 @@
     <section id="services">
         <h2>Mes Services</h2>
         <div class="service">
-    <h3><a href="services/suivi-de-grossesse.html">Suivi de Grossesse</a></h3>
-    <img src="images/A_warm_and_realistic_illustration_of_a_pregnancy_c.png" alt="Suivi de grossesse">
-    <p>Un accompagnement personnalisé pour répondre à vos questions et assurer votre bien-être.<br><em>Durée : 30 minutes | Tarif : 40 €</em></p>
-</div>
-        <div class="service">
-            <h3>Préparation à l’accouchement</h3>
-            <img src="images/A_realistic_and_reassuring_illustration_of_a_child.png" alt="Préparation à l’accouchement">
-            <p>Des séances adaptées pour apprivoiser les étapes de la naissance.<br><em>Durée : 1 heure | Tarif : 50 €</em></p>
+            <h3><a href="services/suivi-de-grossesse.html">Suivi de Grossesse</a></h3>
+            <img src="images/suivi_de_grossesse.jpg" alt="Illustration d'un suivi de grossesse">
+            <p>Un accompagnement personnalisé pour répondre à vos questions et assurer votre bien-être.<br><em>Durée : 30 minutes | Tarif : 40 €</em></p>
         </div>
-        <div class="service">
-            <h3>Rééducation périnéale</h3>
-            <img src="images/A_serene_and_reassuring_illustration_of_pelvic_flo.png" alt="Rééducation périnéale">
-            <p>Des séances ciblées pour retrouver la tonicité de votre périnée.<br><em>Durée : 45 minutes | Tarif : 45 €</em></p>
-        </div>
-        <div class="service">
-            <h3>Consultations postnatales</h3>
-            <img src="images/A_calm_and_warm_illustration_of_a_postnatal_consul.png" alt="Consultations postnatales">
-            <p>Un suivi après la naissance pour veiller à votre santé et celle de votre bébé.<br><em>Durée : 45 minutes | Tarif : 50 €</em></p>
-        </div>
-        <div class="service">
-            <h3>Soins physio-esthétiques</h3>
-            <img src="images/A_relaxing_and_elegant_illustration_of_physio-aest.png" alt="Soins physio-esthétiques">
-            <p>Des soins mêlant esthétique et bien-être physique, pour harmoniser votre corps et vous offrir un moment de détente.<br><em>Durée : 1 heure | Tarif : 60 €</em></p>
-        </div>
-        <div class="service">
-            <h3>Consultations gynécologiques</h3>
-            <img src="images/consultations_gynecologiques.png" alt="Consultations gynécologiques">
-            <p>Des consultations adaptées pour votre suivi gynécologique, dans un cadre rassurant et bienveillant.<br><em>Durée : 30 minutes | Tarif : 50 €</em></p>
-        </div>
+        <!-- Autres services ici -->
     </section>
 
     <section id="rendez-vous">
-    <p>Pour prendre rendez-vous, cliquez sur le bouton ci-dessous. Vous serez redirigé(e) vers notre plateforme de réservation sécurisée.</p>
-    <div class="bouton-container">
-        <a href="https://www.rdvsagefemme.com/a/perrine-willigens" target="_blank" rel="noopener noreferrer" class="button-link">
-            Prendre rendez-vous
-        </a>
-    </div>
-</section>
-
-<style>
-    .bouton-container {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    .button-link {
-        display: inline-block;
-        background-color: var(--couleur-accent);
-        color: var(--fond-clair);
-        padding: 15px 30px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-size: 1.2em;
-        font-weight: bold;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .button-link:hover {
-        background-color: var(--couleur-principale);
-        transform: scale(1.05);
-    }
-
-    .button-link:active {
-        background-color: var(--couleur-secondaire);
-        transform: scale(0.98);
-    }
-</style>
-
+        <h2>Prendre rendez-vous</h2>
+        <p>Pour prendre rendez-vous, cliquez sur le bouton ci-dessous. Vous serez redirigé(e) vers notre plateforme de réservation sécurisée.</p>
+        <div class="bouton-container">
+            <a href="https://www.rdvsagefemme.com/a/perrine-willigens" target="_blank" rel="noopener noreferrer" class="button-link">
+                Prendre rendez-vous
+            </a>
+        </div>
+    </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p><strong>Adresse :</strong> 13 Rue des Marronniers, 64121 Serres-Castet, France</p>
         <p><strong>Téléphone :</strong> +33 6 12 34 56 78</p>
         <p><strong>Email :</strong> contact@perrine-willigens.fr</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1450.1341801899225!2d-0.37448741155592274!3d43.37141249677199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd564681934c378d%3A0xc0106eae40771d09!2s13%20Rue%20des%20Marronniers%2C%2064121%20Serres-Castet!5e0!3m2!1sfr!2sfr!4v1737409550395!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1450.1341801899225!2d-0.37448741155592274!3d43.37141249677199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd564681934c378d%3A0xc0106eae40771d09!2s13%20Rue%20des%20Marronniers%2C%2064121%20Serres-Castet!5e0!3m2!1sfr!2sfr!4v1737409550395!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <footer>
