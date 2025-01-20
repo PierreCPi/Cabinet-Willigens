@@ -17,6 +17,20 @@
             --fond-gris: #A68A79;          /* Marron gris */
         }
 
+        <style>
+    /* Suppression du style bleu par défaut pour les hyperliens */
+    a {
+        color: inherit; /* Adopte la couleur du texte environnant */
+        text-decoration: none; /* Supprime le soulignement */
+    }
+
+    /* Ajout d'un effet visuel au survol pour garder l'interactivité */
+    a:hover {
+        color: var(--couleur-accent); /* Change la couleur au survol */
+        text-decoration: underline; /* Ajoute un soulignement au survol */
+    }
+        </style>
+
         /* Styles généraux */
         body {
             font-family: 'Oswald', Arial, sans-serif;
