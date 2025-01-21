@@ -3,58 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suivi de Grossesse - Cabinet de Sage-Femme</title>
-    <link rel="stylesheet" href="../styles.css"> <!-- Relie le CSS principal -->
+    <title>Cabinet de Sage-Femme - Perrine Willigens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
-        /* Styles spécifiques à la page fille */
-        .page-header {
-            background-color: var(--couleur-principale);
-            color: var(--fond-clair);
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
+        /* Palette de couleurs */
+        :root {
+            --couleur-principale: #8B5E3C; /* Marron doux */
+            --couleur-secondaire: #F5E9DA; /* Beige clair */
+            --couleur-accent: #D4A373;     /* Ocre */
+            --fond-clair: #FAF3E0;         /* Beige très clair */
+            --fond-gris: #A68A79;          /* Marron gris */
         }
 
-        .service-content {
+        /* Styles généraux */
+        body {
+            font-family: 'Oswald', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--fond-clair);
+            color: var(--couleur-principale);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header, nav, section, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--couleur-principale);
+            color: var(--fond-clair);
+        }
+
+        nav {
+            background-color: var(--couleur-secondaire);
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--couleur-principale);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--couleur-accent);
+        }
+
+        section {
             margin: 20px 0;
             background-color: var(--fond-gris);
             border-radius: 8px;
             color: var(--fond-clair);
             padding: 20px;
             box-sizing: border-box;
-            text-align: left;
         }
 
-        .service-content img {
-            max-width: 100%;
+        footer {
+            background-color: var(--couleur-secondaire);
+            color: var(--couleur-principale);
+        }
+
+        .service {
+            margin-bottom: 40px;
+        }
+
+        .service h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .service img {
+            width: 100%;
+            max-width: 500px;
             border-radius: 8px;
-            margin-bottom: 20px;
+        }
+
+        .service p {
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Suppression du style bleu par défaut pour les hyperliens */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--couleur-accent);
+            text-decoration: underline;
+        }
+
+        /* Style spécifique pour le bouton "Prendre rendez-vous" */
+        .bouton-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: var(--couleur-accent);
+            color: var(--fond-clair);
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button-link:hover {
+            background-color: var(--couleur-principale);
+            transform: scale(1.05);
+        }
+
+        .button-link:active {
+            background-color: var(--couleur-secondaire);
+            transform: scale(0.98);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header, nav, section, footer {
+                padding: 15px;
+            }
+
+            .service img {
+                max-width: 100%;
+            }
         }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Cabinet de Sage-Femme - Perrine Willigens</h1>
-    </header>
-    <nav>
-        <a href="../index.html">Accueil</a>
-        <a href="../#services">Services</a>
-        <a href="../#rendez-vous">Prendre rendez-vous</a>
-        <a href="../#contact">Contact</a>
-    </nav>
-    <section class="page-header">
-        <h2>Suivi de Grossesse</h2>
-    </section>
-    <section class="service-content">
-        <img src="../images/A_warm_and_realistic_illustration_of_a_pregnancy_c.png" alt="Suivi de grossesse">
-        <p>
-            Un accompagnement personnalisé pour répondre à vos questions et assurer votre bien-être tout au long de votre grossesse.
-        </p>
-        <p><strong>Durée :</strong> 30 minutes</p>
-        <p><strong>Tarif :</strong> 40 €</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Cabinet de Sage-Femme - Perrine Willigens. Tous droits réservés.</p>
-    </footer>
-</body>
-</html>
