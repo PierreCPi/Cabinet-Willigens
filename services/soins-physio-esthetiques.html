@@ -3,6 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet de Sage-Femme - Perrine Willigens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        /* Palette de couleurs */
+        :root {
+            --couleur-principale: #8B5E3C; /* Marron doux */
+            --couleur-secondaire: #F5E9DA; /* Beige clair */
+            --couleur-accent: #D4A373;     /* Ocre */
+            --fond-clair: #FAF3E0;         /* Beige très clair */
+            --fond-gris: #A68A79;          /* Marron gris */
+        }
+
+        /* Styles généraux */
+        body {
+            font-family: 'Oswald', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--fond-clair);
+            color: var(--couleur-principale);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header, nav, section, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--couleur-principale);
+            color: var(--fond-clair);
+        }
+
+        nav {
+            background-color: var(--couleur-secondaire);
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--couleur-principale);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--couleur-accent);
+        }
+
+        section {
+            margin: 20px 0;
+            background-color: var(--fond-gris);
+            border-radius: 8px;
+            color: var(--fond-clair);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: var(--couleur-secondaire);
+            color: var(--couleur-principale);
+        }
+
+        .service {
+            margin-bottom: 40px;
+        }
+
+        .service h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .service img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+
+        .service p {
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        /* Suppression du style bleu par défaut pour les hyperliens */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--couleur-accent);
+            text-decoration: underline;
+        }
+
+        /* Style spécifique pour le bouton "Prendre rendez-vous" */
+        .bouton-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: var(--couleur-accent);
+            color: var(--fond-clair);
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button-link:hover {
+            background-color: var(--couleur-principale);
+            transform: scale(1.05);
+        }
+
+        .button-link:active {
+            background-color: var(--couleur-secondaire);
+            transform: scale(0.98);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header, nav, section, footer {
+                padding: 15px;
+            }
+
+            .service img {
+                max-width: 100%;
+            }
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soins Physio-Esthétiques - Cabinet de Sage-Femme</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
