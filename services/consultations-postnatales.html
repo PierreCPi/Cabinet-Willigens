@@ -3,24 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultations Postnatales - Cabinet de Sage-Femme</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Consultations Postnatales - Cabinet de Sage-Femme - Perrine Willigens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        /* Palette de couleurs */
+        :root {
+            --couleur-principale: #8B5E3C; /* Marron doux */
+            --couleur-secondaire: #F5E9DA; /* Beige clair */
+            --couleur-accent: #D4A373;     /* Ocre */
+            --fond-clair: #FAF3E0;         /* Beige très clair */
+            --fond-gris: #A68A79;          /* Marron gris */
+        }
+
+        /* Styles généraux */
+        body {
+            font-family: 'Oswald', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--fond-clair);
+            color: var(--couleur-principale);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        header, nav, section, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--couleur-principale);
+            color: var(--fond-clair);
+        }
+
+        nav {
+            background-color: var(--couleur-secondaire);
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--couleur-principale);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--couleur-accent);
+        }
+
+        section {
+            margin: 20px 0;
+            background-color: var(--fond-gris);
+            border-radius: 8px;
+            color: var(--fond-clair);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: var(--couleur-secondaire);
+            color: var(--couleur-principale);
+        }
+
+        .page-header img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <header><h1>Cabinet de Sage-Femme - Perrine Willigens</h1></header>
+    <header>
+        <h1>Cabinet de Sage-Femme - Perrine Willigens</h1>
+    </header>
     <nav>
         <a href="../index.html">Accueil</a>
         <a href="../#services">Services</a>
         <a href="../#rendez-vous">Prendre rendez-vous</a>
         <a href="../#contact">Contact</a>
     </nav>
-    <section class="page-header"><h2>Consultations Postnatales</h2></section>
-    <section class="service-content">
-        <img src="../images/A_calm_and_warm_illustration_of_a_postnatal_consul.png" alt="Consultations postnatales">
-        <p>Un suivi après la naissance pour veiller à votre santé et à celle de votre bébé.</p>
+    <section>
+        <div class="page-header">
+            <h2>Consultations Postnatales</h2>
+            <img src="../images/A_calm_and_warm_illustration_of_a_postnatal_consul.png" alt="Consultations Postnatales">
+        </div>
+        <p>
+            Un suivi après la naissance pour veiller à votre santé et à celle de votre bébé.
+        </p>
         <p><strong>Durée :</strong> 45 minutes</p>
         <p><strong>Tarif :</strong> 50 €</p>
     </section>
-    <footer><p>&copy; 2025 Cabinet de Sage-Femme - Perrine Willigens. Tous droits réservés.</p></footer>
+    <footer>
+        <p>&copy; 2025 Cabinet de Sage-Femme - Perrine Willigens. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
