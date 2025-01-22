@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Préparation à l’accouchement - Cabinet de Sage-Femme - Perrine Willigens</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+    :root {
+        --couleur-principale: #8B5E3C;
+        --couleur-secondaire: #F5E9DA;
+        --couleur-accent: #D4A373;
+        --fond-clair: #FAF3E0;
+        --fond-gris: #A68A79;
+    }
+
+    body {
+        font-family: 'Oswald', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--fond-clair);
+        color: var(--couleur-principale);
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centre verticalement */
+        align-items: center; /* Centre horizontalement */
+        min-height: 100vh; /* La hauteur minimale couvre tout l'écran */
+        text-align: center;
+    }
+
+    header, nav, section, footer {
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: var(--couleur-principale);
+        color: var(--fond-clair);
+    }
+
+    nav {
+        background-color: var(--couleur-secondaire);
+    }
+
+    nav a {
+        margin: 0 15px;
+        color: var(--couleur-principale);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: var(--couleur-accent);
+    }
+
+    .page-header {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: var(--fond-gris);
+        color: var(--fond-clair);
+        border-radius: 8px;
+    }
+
+    .page-header img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    footer {
+        background-color: var(--couleur-secondaire);
+        color: var(--couleur-principale);
+    }
+</style>
 <body>
     <header>
         <h1>Cabinet de Sage-Femme - Perrine Willigens</h1>
