@@ -43,16 +43,20 @@
         header {
             background-color: var(--couleur-principale);
             color: var(--fond-clair);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            flex-grow: 1;
             text-align: center;
-            position: relative;
+            margin: 0;
+            font-size: 1.8em;
         }
 
         header img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 100px;
+            max-width: 80px;
             height: auto;
         }
 
@@ -162,6 +166,14 @@
             .service img {
                 max-width: 100%;
             }
+
+            header img {
+                max-width: 60px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -169,6 +181,7 @@
     <header>
         <img src="images/logo.png" alt="Logo Perrine Willigens">
         <h1>Cabinet de Sage-Femme - Perrine Willigens</h1>
+        <img src="images/logo.png" alt="Logo Perrine Willigens">
     </header>
     <nav>
         <a href="#accueil">Accueil</a>
