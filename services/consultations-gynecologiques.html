@@ -3,24 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultations Gynécologiques - Cabinet de Sage-Femme</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Consultations Gynécologiques - Cabinet de Sage-Femme - Perrine Willigens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --couleur-principale: #8B5E3C;
+            --couleur-secondaire: #F5E9DA;
+            --couleur-accent: #D4A373;
+            --fond-clair: #FAF3E0;
+            --fond-gris: #A68A79;
+        }
+
+        body {
+            font-family: 'Oswald', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--fond-clair);
+            color: var(--couleur-principale);
+            text-align: center;
+        }
+
+        header, nav, section, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--couleur-principale);
+            color: var(--fond-clair);
+        }
+
+        nav {
+            background-color: var(--couleur-secondaire);
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: var(--couleur-principale);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--couleur-accent);
+        }
+
+        .page-header {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: var(--fond-gris);
+            color: var(--fond-clair);
+            border-radius: 8px;
+        }
+
+        .page-header img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: var(--couleur-secondaire);
+            color: var(--couleur-principale);
+        }
+    </style>
 </head>
 <body>
-    <header><h1>Cabinet de Sage-Femme - Perrine Willigens</h1></header>
+    <header>
+        <h1>Cabinet de Sage-Femme - Perrine Willigens</h1>
+    </header>
     <nav>
         <a href="../index.html">Accueil</a>
         <a href="../#services">Services</a>
         <a href="../#rendez-vous">Prendre rendez-vous</a>
         <a href="../#contact">Contact</a>
     </nav>
-    <section class="page-header"><h2>Consultations Gynécologiques</h2></section>
-    <section class="service-content">
-        <img src="../images/consultations_gynecologiques.png" alt="Consultations gynécologiques">
-        <p>Des consultations adaptées pour votre suivi gynécologique, dans un cadre rassurant et bienveillant.</p>
+    <section>
+        <div class="page-header">
+            <h2>Consultations Gynécologiques</h2>
+            <img src="../images/consultations_gynecologiques.png" alt="Consultations Gynécologiques">
+        </div>
+        <p>
+            Des consultations adaptées pour votre suivi gynécologique, dans un cadre rassurant et bienveillant.
+        </p>
         <p><strong>Durée :</strong> 30 minutes</p>
         <p><strong>Tarif :</strong> 50 €</p>
     </section>
-    <footer><p>&copy; 2025 Cabinet de Sage-Femme - Perrine Willigens. Tous droits réservés.</p></footer>
+    <footer>
+        <p>&copy; 2025 Cabinet de Sage-Femme - Perrine Willigens. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
