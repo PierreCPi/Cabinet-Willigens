@@ -58,6 +58,14 @@
         header img {
             max-width: 80px;
             height: auto;
+            border-radius: 50%; /* Forme ovale verticale */
+            clip-path: ellipse(50% 60% at 50% 50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.5s ease;
+        }
+
+        header img:hover {
+            opacity: 0.8; /* Fondu progressif au survol */
         }
 
         nav {
