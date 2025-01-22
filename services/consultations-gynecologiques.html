@@ -8,73 +8,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
-    :root {
-        --couleur-principale: #8B5E3C;
-        --couleur-secondaire: #F5E9DA;
-        --couleur-accent: #D4A373;
-        --fond-clair: #FAF3E0;
-        --fond-gris: #A68A79;
-    }
+        :root {
+            --couleur-principale: #8B5E3C;
+            --couleur-secondaire: #F5E9DA;
+            --couleur-accent: #D4A373;
+            --fond-clair: #FAF3E0;
+            --fond-gris: #A68A79;
+        }
 
-    body {
-        font-family: 'Oswald', Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: var(--fond-clair);
-        color: var(--couleur-principale);
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centre verticalement */
-        align-items: center; /* Centre horizontalement */
-        min-height: 100vh; /* La hauteur minimale couvre tout l'écran */
-        text-align: center;
-    }
+        body {
+            font-family: 'Oswald', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--fond-clair);
+            color: var(--couleur-principale);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
 
-    header, nav, section, footer {
-        width: 100%;
-        max-width: 800px;
-        padding: 20px;
-        box-sizing: border-box;
-    }
+        header {
+            background-color: var(--couleur-principale);
+            color: var(--fond-clair);
+            width: 100%;
+            padding: 20px;
+        }
 
-    header {
-        background-color: var(--couleur-principale);
-        color: var(--fond-clair);
-    }
+        nav {
+            background-color: var(--couleur-secondaire);
+            width: 100%;
+            padding: 10px;
+        }
 
-    nav {
-        background-color: var(--couleur-secondaire);
-    }
+        nav a {
+            margin: 0 15px;
+            color: var(--couleur-principale);
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    nav a {
-        margin: 0 15px;
-        color: var(--couleur-principale);
-        text-decoration: none;
-        font-weight: bold;
-    }
+        nav a:hover {
+            color: var(--couleur-accent);
+        }
 
-    nav a:hover {
-        color: var(--couleur-accent);
-    }
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: var(--fond-gris);
+            color: var(--fond-clair);
+            border-radius: 8px;
+        }
 
-    .page-header {
-        margin: 20px 0;
-        padding: 20px;
-        background-color: var(--fond-gris);
-        color: var(--fond-clair);
-        border-radius: 8px;
-    }
+        .page-header img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
 
-    .page-header img {
-        max-width: 100%;
-        border-radius: 8px;
-    }
-
-    footer {
-        background-color: var(--couleur-secondaire);
-        color: var(--couleur-principale);
-    }
-</style>
+        footer {
+            background-color: var(--couleur-secondaire);
+            color: var(--couleur-principale);
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
